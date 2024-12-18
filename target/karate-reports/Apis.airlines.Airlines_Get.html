@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"2a213880-0baa-4d7c-af15-20616482830a",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Apis.airlines.Airlines_Get</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-12-10 12:28:00 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[2:12]"><span>[2:12]</span> <span>Get specific airline details base on id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Apis/airlines/Airlines_Get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Online Fake API-Airlines-Get</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">execute</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:12]</span>
+                <span class="scenario-name">Get specific airline details base on id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url secureBaseURL</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">12:28:00.556 callSingle() will cache an exception
+12:28:00.556 &lt;&lt; lock released, cached callSingle: classpath:Authentication/Authentication.feature
+12:28:00.556 callSingle() cached result is an exception
+12:28:00.571 classpath:Apis/airlines/Airlines_Get.feature:13
+Given url secureBaseURL
+&gt;&gt; classpath:Apis/airlines/Airlines_Get.feature:12
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 	var env = karate.env; // get system property &#39;karate.env&#39;
+03: 	karate.log(&#39;karate.env system property was:&#39;, env);
+04: 	if (!env) {
+05: 		env = &#39;dev&#39;;
+06: 	}
+07: 	var config = {
+08: 		env: env,
+09: 		
+10: 		AUTHURI: &#39;https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token&#39;,
+11: 		nonSecureBaseURL: &#39;https://api.instantwebtools.net/v1&#39;,
+12: 		secureBaseURL: &#39;https://api.instantwebtools.net/v2&#39;,
+13: 		SCOPE: &#39;offline_access&#39;,
+14: 		GRANT_TYPE: &#39;password&#39;,
+15: 		USER_NAME: &#39;api-user4@iwt.net&#39;,
+16: 		PASSWORD: &#39;b3z0nV0cLO&#39;,
+17: 		CLIENT_ID: &#39;0oahdhjkutaGcIK2M4x6&#39;,
+18: 	}
+19: 
+20: 	var result = karate.callSingle(&#39;classpath:Authentication/Authentication.feature&#39;,config);
+21: 	
+22: 	
+23: 	config.authInfo = { 
+24: 		authTime: result.time, authToken: result.access_token 
+25: 	};   
+26: 	  
+27: 	console.log(config.authInfo.authToken);
+28: 	karate.log(config.authInfo.authToken);
+29: 	if (env == &#39;dev&#39;) {
+30: 	} else if (env == &#39;production&#39;) {
+31: 		
+32: 	}
+33: 	return config;
+34: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:241)
+- &lt;js&gt;.fn(Unnamed:20)
+
+classpath:Apis/airlines/Airlines_Get.feature:13
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.13.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Authentication.Authentication</div>
+      </div>
+      <div class="time-cell passed">1790</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded; charset=utf-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.5">12:27:58.706 karate.env system property was: null 
+12:27:58.714 &gt;&gt; lock acquired, begin callSingle: classpath:Authentication/Authentication.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field scope = SCOPE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">125</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = GRANT_TYPE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field username = USER_NAME</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field password = PASSWORD</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field client_id = CLIENT_ID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.11">
+      <div class="step-ref passed">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>url AUTHURI</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.12">
+      <div class="step-ref passed">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1642</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.12">12:27:59.206 request:
+1 &gt; POST https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 &gt; Content-Length: 120
+1 &gt; Host: dev-457931.okta.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+scope=offline_access&amp;grant_type=password&amp;username=api-user4%40iwt.net&amp;password=b3z0nV0cLO&amp;client_id=0oahdhjkutaGcIK2M4x6
+
+12:28:00.538 response time in milliseconds: 1323
+1 &lt; 400
+1 &lt; Date: Tue, 10 Dec 2024 06:58:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: nginx
+1 &lt; x-okta-request-id: 6607d5c02374911b298dee0149b51a2f
+1 &lt; x-xss-protection: 0
+1 &lt; p3p: CP=&quot;HONK&quot;
+1 &lt; set-cookie: sid=&quot;&quot;;Version=1;Path=/;Max-Age=0
+1 &lt; set-cookie: xids=&quot;&quot;;Version=1;Path=/;Max-Age=0
+1 &lt; set-cookie: autolaunch_triggered=&quot;&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/
+1 &lt; set-cookie: activate_ca_modal_triggered=&quot;&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/
+1 &lt; set-cookie: JSESSIONID=6135F1D260A3665B427B63D112290ACA; Path=/; Secure; HttpOnly
+1 &lt; content-security-policy: default-src &#39;self&#39; dev-457931.okta.com *.oktacdn.com; connect-src &#39;self&#39; dev-457931.okta.com dev-457931-admin.okta.com *.oktacdn.com *.mixpanel.com *.mapbox.com *.mtls.okta.com https://oinmanager.okta.com data: *.ingest.sentry.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com; script-src &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; &#39;self&#39; &#39;report-sample&#39; dev-457931.okta.com *.oktacdn.com; style-src &#39;unsafe-inline&#39; &#39;self&#39; dev-457931.okta.com *.oktacdn.com; frame-src &#39;self&#39; dev-457931.okta.com dev-457931-admin.okta.com login.okta.com *.vidyard.com; img-src &#39;self&#39; dev-457931.okta.com *.oktacdn.com *.tiles.mapbox.com *.mapbox.com *.vidyard.com data: data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com blob:; font-src &#39;self&#39; dev-457931.okta.com data: *.oktacdn.com fonts.gstatic.com; frame-ancestors &#39;self&#39;
+1 &lt; x-rate-limit-limit: 2000
+1 &lt; x-rate-limit-remaining: 1999
+1 &lt; x-rate-limit-reset: 1733813940
+1 &lt; cache-control: no-cache, no-store
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; accept-ch: Sec-CH-UA-Platform-Version
+1 &lt; x-content-type-options: nosniff
+1 &lt; Strict-Transport-Security: max-age=315360000; includeSubDomains
+1 &lt; Set-Cookie: sid=&quot;&quot;;Version=1;Path=/;Max-Age=0
+1 &lt; Set-Cookie: xids=&quot;&quot;;Version=1;Path=/;Max-Age=0
+1 &lt; Set-Cookie: autolaunch_triggered=&quot;&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/
+1 &lt; Set-Cookie: activate_ca_modal_triggered=&quot;&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/
+1 &lt; Set-Cookie: JSESSIONID=6135F1D260A3665B427B63D112290ACA; Path=/; Secure; HttpOnly
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.13">
+      <div class="step-ref failed">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13.0.call.0.13">12:28:00.552 classpath:Authentication/Authentication.feature:13
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.13.0.call">
+    <div class="step-container" id="0.13.0.call.0.14">
+      <div class="step-ref skipped">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def access_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+authInfo.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">12:28:00.571 classpath:Apis/airlines/Airlines_Get.feature:14
+And header Authorization = &#39;Bearer &#39;+authInfo.authToken
+&gt;&gt; classpath:Apis/airlines/Airlines_Get.feature:12
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 	var env = karate.env; // get system property &#39;karate.env&#39;
+03: 	karate.log(&#39;karate.env system property was:&#39;, env);
+04: 	if (!env) {
+05: 		env = &#39;dev&#39;;
+06: 	}
+07: 	var config = {
+08: 		env: env,
+09: 		
+10: 		AUTHURI: &#39;https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token&#39;,
+11: 		nonSecureBaseURL: &#39;https://api.instantwebtools.net/v1&#39;,
+12: 		secureBaseURL: &#39;https://api.instantwebtools.net/v2&#39;,
+13: 		SCOPE: &#39;offline_access&#39;,
+14: 		GRANT_TYPE: &#39;password&#39;,
+15: 		USER_NAME: &#39;api-user4@iwt.net&#39;,
+16: 		PASSWORD: &#39;b3z0nV0cLO&#39;,
+17: 		CLIENT_ID: &#39;0oahdhjkutaGcIK2M4x6&#39;,
+18: 	}
+19: 
+20: 	var result = karate.callSingle(&#39;classpath:Authentication/Authentication.feature&#39;,config);
+21: 	
+22: 	
+23: 	config.authInfo = { 
+24: 		authTime: result.time, authToken: result.access_token 
+25: 	};   
+26: 	  
+27: 	console.log(config.authInfo.authToken);
+28: 	karate.log(config.authInfo.authToken);
+29: 	if (env == &#39;dev&#39;) {
+30: 	} else if (env == &#39;production&#39;) {
+31: 		
+32: 	}
+33: 	return config;
+34: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:241)
+- &lt;js&gt;.fn(Unnamed:20)
+
+classpath:Apis/airlines/Airlines_Get.feature:13
+classpath:Apis/airlines/Airlines_Get.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>path &#39;airlines/73dd5420-3bf9-48f3-a0b6-17cf7aa61b19&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">12:28:00.572 classpath:Apis/airlines/Airlines_Get.feature:15
+And path &#39;airlines/73dd5420-3bf9-48f3-a0b6-17cf7aa61b19&#39;
+&gt;&gt; classpath:Apis/airlines/Airlines_Get.feature:12
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 	var env = karate.env; // get system property &#39;karate.env&#39;
+03: 	karate.log(&#39;karate.env system property was:&#39;, env);
+04: 	if (!env) {
+05: 		env = &#39;dev&#39;;
+06: 	}
+07: 	var config = {
+08: 		env: env,
+09: 		
+10: 		AUTHURI: &#39;https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token&#39;,
+11: 		nonSecureBaseURL: &#39;https://api.instantwebtools.net/v1&#39;,
+12: 		secureBaseURL: &#39;https://api.instantwebtools.net/v2&#39;,
+13: 		SCOPE: &#39;offline_access&#39;,
+14: 		GRANT_TYPE: &#39;password&#39;,
+15: 		USER_NAME: &#39;api-user4@iwt.net&#39;,
+16: 		PASSWORD: &#39;b3z0nV0cLO&#39;,
+17: 		CLIENT_ID: &#39;0oahdhjkutaGcIK2M4x6&#39;,
+18: 	}
+19: 
+20: 	var result = karate.callSingle(&#39;classpath:Authentication/Authentication.feature&#39;,config);
+21: 	
+22: 	
+23: 	config.authInfo = { 
+24: 		authTime: result.time, authToken: result.access_token 
+25: 	};   
+26: 	  
+27: 	console.log(config.authInfo.authToken);
+28: 	karate.log(config.authInfo.authToken);
+29: 	if (env == &#39;dev&#39;) {
+30: 	} else if (env == &#39;production&#39;) {
+31: 		
+32: 	}
+33: 	return config;
+34: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:241)
+- &lt;js&gt;.fn(Unnamed:20)
+
+classpath:Apis/airlines/Airlines_Get.feature:13
+classpath:Apis/airlines/Airlines_Get.feature:14
+classpath:Apis/airlines/Airlines_Get.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">12:28:00.572 classpath:Apis/airlines/Airlines_Get.feature:16
+When method GET
+&gt;&gt; classpath:Apis/airlines/Airlines_Get.feature:12
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 	var env = karate.env; // get system property &#39;karate.env&#39;
+03: 	karate.log(&#39;karate.env system property was:&#39;, env);
+04: 	if (!env) {
+05: 		env = &#39;dev&#39;;
+06: 	}
+07: 	var config = {
+08: 		env: env,
+09: 		
+10: 		AUTHURI: &#39;https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token&#39;,
+11: 		nonSecureBaseURL: &#39;https://api.instantwebtools.net/v1&#39;,
+12: 		secureBaseURL: &#39;https://api.instantwebtools.net/v2&#39;,
+13: 		SCOPE: &#39;offline_access&#39;,
+14: 		GRANT_TYPE: &#39;password&#39;,
+15: 		USER_NAME: &#39;api-user4@iwt.net&#39;,
+16: 		PASSWORD: &#39;b3z0nV0cLO&#39;,
+17: 		CLIENT_ID: &#39;0oahdhjkutaGcIK2M4x6&#39;,
+18: 	}
+19: 
+20: 	var result = karate.callSingle(&#39;classpath:Authentication/Authentication.feature&#39;,config);
+21: 	
+22: 	
+23: 	config.authInfo = { 
+24: 		authTime: result.time, authToken: result.access_token 
+25: 	};   
+26: 	  
+27: 	console.log(config.authInfo.authToken);
+28: 	karate.log(config.authInfo.authToken);
+29: 	if (env == &#39;dev&#39;) {
+30: 	} else if (env == &#39;production&#39;) {
+31: 		
+32: 	}
+33: 	return config;
+34: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:241)
+- &lt;js&gt;.fn(Unnamed:20)
+
+classpath:Apis/airlines/Airlines_Get.feature:13
+classpath:Apis/airlines/Airlines_Get.feature:14
+classpath:Apis/airlines/Airlines_Get.feature:15
+classpath:Apis/airlines/Airlines_Get.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">12:28:00.572 classpath:Apis/airlines/Airlines_Get.feature:17
+Then status 200
+&gt;&gt; classpath:Apis/airlines/Airlines_Get.feature:12
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 	var env = karate.env; // get system property &#39;karate.env&#39;
+03: 	karate.log(&#39;karate.env system property was:&#39;, env);
+04: 	if (!env) {
+05: 		env = &#39;dev&#39;;
+06: 	}
+07: 	var config = {
+08: 		env: env,
+09: 		
+10: 		AUTHURI: &#39;https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token&#39;,
+11: 		nonSecureBaseURL: &#39;https://api.instantwebtools.net/v1&#39;,
+12: 		secureBaseURL: &#39;https://api.instantwebtools.net/v2&#39;,
+13: 		SCOPE: &#39;offline_access&#39;,
+14: 		GRANT_TYPE: &#39;password&#39;,
+15: 		USER_NAME: &#39;api-user4@iwt.net&#39;,
+16: 		PASSWORD: &#39;b3z0nV0cLO&#39;,
+17: 		CLIENT_ID: &#39;0oahdhjkutaGcIK2M4x6&#39;,
+18: 	}
+19: 
+20: 	var result = karate.callSingle(&#39;classpath:Authentication/Authentication.feature&#39;,config);
+21: 	
+22: 	
+23: 	config.authInfo = { 
+24: 		authTime: result.time, authToken: result.access_token 
+25: 	};   
+26: 	  
+27: 	console.log(config.authInfo.authToken);
+28: 	karate.log(config.authInfo.authToken);
+29: 	if (env == &#39;dev&#39;) {
+30: 	} else if (env == &#39;production&#39;) {
+31: 		
+32: 	}
+33: 	return config;
+34: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:241)
+- &lt;js&gt;.fn(Unnamed:20)
+
+classpath:Apis/airlines/Airlines_Get.feature:13
+classpath:Apis/airlines/Airlines_Get.feature:14
+classpath:Apis/airlines/Airlines_Get.feature:15
+classpath:Apis/airlines/Airlines_Get.feature:16
+classpath:Apis/airlines/Airlines_Get.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#And match responseStatus == 200</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#And match response == {&quot;_id&quot;:&quot;73dd5420-3bf9-48f3-a0b6-17cf7aa61b19&quot;,&quot;name&quot;:&quot;American Airlines&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;logo&quot;:&quot;https://example.com/logos/american_airlines.png&quot;,&quot;slogan&quot;:&quot;Going for great&quot;,&quot;head_quaters&quot;:&quot;Fort Worth, Texas&quot;,&quot;website&quot;:&quot;https://www.aa.com&quot;,&quot;established&quot;:&quot;1930&quot;}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#And match $ = {&quot;_id&quot;:&quot;73dd5420-3bf9-48f3-a0b6-17cf7aa61b19&quot;,&quot;name&quot;:&quot;American Airlines&quot;,&quot;country&quot;:&quot;United States&quot;,&quot;logo&quot;:&quot;https://example.com/logos/american_airlines.png&quot;,&quot;slogan&quot;:&quot;Going for great&quot;,&quot;head_quaters&quot;:&quot;Fort Worth, Texas&quot;,&quot;website&quot;:&quot;https://www.aa.com&quot;,&quot;established&quot;:&quot;1930&quot;}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#And match response.country == &quot;United States&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#And match $.slogan == &quot;Going for great&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref failed">23</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.name contains &quot;Ame&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">12:28:00.573 classpath:Apis/airlines/Airlines_Get.feature:23
+And match response.name contains &quot;Ame&quot;
+&gt;&gt; classpath:Apis/airlines/Airlines_Get.feature:12
+&gt;&gt; karate-config.js failed
+&gt;&gt; status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02: 	var env = karate.env; // get system property &#39;karate.env&#39;
+03: 	karate.log(&#39;karate.env system property was:&#39;, env);
+04: 	if (!env) {
+05: 		env = &#39;dev&#39;;
+06: 	}
+07: 	var config = {
+08: 		env: env,
+09: 		
+10: 		AUTHURI: &#39;https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token&#39;,
+11: 		nonSecureBaseURL: &#39;https://api.instantwebtools.net/v1&#39;,
+12: 		secureBaseURL: &#39;https://api.instantwebtools.net/v2&#39;,
+13: 		SCOPE: &#39;offline_access&#39;,
+14: 		GRANT_TYPE: &#39;password&#39;,
+15: 		USER_NAME: &#39;api-user4@iwt.net&#39;,
+16: 		PASSWORD: &#39;b3z0nV0cLO&#39;,
+17: 		CLIENT_ID: &#39;0oahdhjkutaGcIK2M4x6&#39;,
+18: 	}
+19: 
+20: 	var result = karate.callSingle(&#39;classpath:Authentication/Authentication.feature&#39;,config);
+21: 	
+22: 	
+23: 	config.authInfo = { 
+24: 		authTime: result.time, authToken: result.access_token 
+25: 	};   
+26: 	  
+27: 	console.log(config.authInfo.authToken);
+28: 	karate.log(config.authInfo.authToken);
+29: 	if (env == &#39;dev&#39;) {
+30: 	} else if (env == &#39;production&#39;) {
+31: 		
+32: 	}
+33: 	return config;
+34: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: status code was: 400, expected: 200, response time in milliseconds: 1323, url: https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1/token, response: 
+{&quot;error&quot;:&quot;invalid_grant&quot;,&quot;error_description&quot;:&quot;The credentials provided were invalid.&quot;}
+classpath:Authentication/Authentication.feature:13
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:241)
+- &lt;js&gt;.fn(Unnamed:20)
+
+classpath:Apis/airlines/Airlines_Get.feature:13
+classpath:Apis/airlines/Airlines_Get.feature:14
+classpath:Apis/airlines/Airlines_Get.feature:15
+classpath:Apis/airlines/Airlines_Get.feature:16
+classpath:Apis/airlines/Airlines_Get.feature:17
+classpath:Apis/airlines/Airlines_Get.feature:23
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
