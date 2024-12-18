@@ -12,7 +12,7 @@ function fn() {
 		secureBaseURL: 'https://api.instantwebtools.net/v2',
 		SCOPE: 'offline_access',
 		GRANT_TYPE: 'password',
-		USER_NAME: 'api-user4@iwt.net',
+		USER_NAME: 'api-user1@iwt.net',
 		PASSWORD: 'b3z0nV0cLO',
 		CLIENT_ID: '0oahdhjkutaGcIK2M4x6',
 	}
@@ -24,11 +24,5 @@ function fn() {
 		authTime: result.time, authToken: result.access_token 
 	};   
 	  
-	console.log(config.authInfo.authToken);
-	karate.log(config.authInfo.authToken);
-	if (env == 'dev') {
-	} else if (env == 'production') {
-		
-	}
 	return config;
 }
