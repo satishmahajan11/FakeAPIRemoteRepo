@@ -15,7 +15,7 @@ class TestRunner {
 	
     @Karate.Test
     Karate testTags() {
-        return Karate.run("classpath:./Apis").tags("@execute").relativeTo(getClass());
+        return Karate.run("classpath:./Apis").relativeTo(getClass());
     }
 
 	
