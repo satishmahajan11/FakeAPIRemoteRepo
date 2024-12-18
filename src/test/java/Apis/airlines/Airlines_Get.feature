@@ -1,6 +1,10 @@
 Feature: Online Fake API-Airlines-Get
 
 	
+	Scenario:Temp Scenario
+		print 'This is temp Scenario'
+
+	
   Scenario: Get all airlines details
     Given url secureBaseURL
     And header Authorization = 'Bearer '+authInfo.authToken
@@ -8,7 +12,7 @@ Feature: Online Fake API-Airlines-Get
     When method GET
     Then status 200
 
-  @execute
+  
   Scenario: Get specific airline details base on id
     Given url secureBaseURL
     And header Authorization = 'Bearer '+authInfo.authToken
